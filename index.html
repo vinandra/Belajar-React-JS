@@ -11,10 +11,12 @@
 
     <div id="root"></div>
 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script>
+    <!-- <script> -->
+    <script type="text/babel">
         // const root = document.querySelector('#root');
         // const element=document.createElement('h1');
         // element.textContent='Hello from JS!';
@@ -42,7 +44,15 @@
         //     React.createElement("li", null, "Pisang")
         // );
 
-        ReactDOM.render(element,root);
+        const element = (
+            <ul>        
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Grape</li>
+            </ul>
+        );
+
+        ReactDOM.render(element, root);
     </script>
 </body>
 </html>
