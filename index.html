@@ -11,11 +11,38 @@
 
     <div id="root"></div>
 
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
     <script>
+        // const root = document.querySelector('#root');
+        // const element=document.createElement('h1');
+        // element.textContent='Hello from JS!';
+        // root.appendChild(element);
+
         const root = document.querySelector('#root');
-        const element=document.createElement('h1');
-        element.textContent='Hello from JS!';
-        root.appendChild(element);
+
+        // const p1 = React.createElement('p',{
+        //     children:'paragraf 1',
+        // });
+
+        // const p2 = React.createElement("p", {
+        //     children : "paragraf 2",
+        // })
+
+        // const element = React.createElement(React.Fragment, {
+        //     children : [p1, p2],
+        // })
+
+        // const element = React.createElement(
+        //     "ul",
+        //     {className : "list"},
+        //     React.createElement("li", null, "apple"),
+        //     React.createElement("li", null, "Semangka"),
+        //     React.createElement("li", null, "Pisang")
+        // );
+
+        ReactDOM.render(element,root);
     </script>
 </body>
 </html>
